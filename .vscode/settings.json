@@ -113,7 +113,7 @@
    * Format a file on save.
    * Defaults to true.
    */
-  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
   /**
    * Controls whether the editor should automatically format the line after typing.
    * Defaults to false.
@@ -320,19 +320,25 @@
   /**
    * Prettier - Print semicolons at the ends of statements.
    */
-  // "prettier.semi": true,
+  "prettier.semi": false,
   /**
    * Prettier - Use single quotes instead of double quotes.
    */
-  // "prettier.singleQuote": true,
+  "prettier.singleQuote": true,
   /**
    * Prettier - Specify the number of spaces per indentation-level.
    */
-  // "prettier.tabWidth": 2,
+  "prettier.tabWidth": 2,
   /**
    * Prettier - Indent lines with tabs instead of spaces.
    */
-  // "prettier.useTabs": false,
+  "prettier.useTabs": false,
+
+  "prettier.printWidth": 100,
+  "prettier.trailingComma": "all",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleAttributePerLine": false,
+
   /**
    * Controls whether the terminal cursor blinks.
    * Defaults to false.
@@ -366,4 +372,8 @@
    * - 21: White on black or black on white.
    */
   // "terminal.integrated.minimumContrastRatio": 4.5,
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
